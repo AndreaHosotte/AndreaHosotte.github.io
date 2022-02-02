@@ -662,10 +662,28 @@ footer p {
         width: 80%;
     }
     #formation {
-        margin-right: 10%;
+        margin: 210px 0 0 10%;
+        width: 80%;
+        float: none;
+        display: block;
     }
-    .network {
+    .counter-value {
+        font-size: 1em;
+    }
+    .date-span {
+        font-size: .7em;
+    }
+    #parcours {
+        margin-top: -50px;
+    }
+    .legende {
+        display: none;
+    }
+    #other h3,
+    #hobbies h3 {
         font-size: 2em;
-        padding: 10px 20px;
+    }
+    .cloud {
+        font-size: 1.5em;
     }
 }
