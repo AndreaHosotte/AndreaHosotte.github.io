@@ -5,7 +5,7 @@ html {
 
 body {
     color: #283655 !important;
-    background-color: #f7faff !important;
+    background-color: #cec8c5 !important;
     font-family: 'Rambla', sans-serif;
 }
 
@@ -258,7 +258,7 @@ header .button:hover a {
 #portefolio {
     margin: 100px 2% 0 2%;
     padding: 40px 10px 60px 40px;
-    background-color: rgba(179, 172, 167, 0.08);
+    background-color: rgba(94, 86, 80, 0.2);
     box-shadow: 0px 0px 1px #626263;
 }
 
@@ -424,7 +424,7 @@ header .button:hover a {
     padding: 150px 50px 100px 50px;
     margin: -250px 0 -50px 0;
     background-color: #afa791;
-    clip-path: polygon(0 16%, 100% 9%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 16%, 100% 9%, 105% 95%, 0% 100%);
 }
 
 #hobbies h3 {
@@ -493,12 +493,13 @@ header .button:hover a {
 footer {
     background: url(./media/footer.jpg) 50% 0% no-repeat fixed;
     background-size: cover;
+    height: 75vh;
     text-align: center;
-    padding: 160px 50px 5 50px;
+    padding: 200px 50px 5 50px;
 }
 
 footer h3 {
-    padding: 0 0 60px 0;
+    padding: 50px 0 60px 0;
     font-size: 2em;
 }
 
@@ -511,17 +512,88 @@ footer h3 {
 
 .network {
     font-size: 3.5em;
-    border: 1px solid #b3aca7;
+    border: 3px solid #726659;
     padding: 30px 45px;
     color: #6e6e6b;
     z-index: -1 !important;
     border-radius: 50%;
 }
 
-.network:hover {
+.network:hover,
+textarea:hover,
+input:hover,
+.form-button:hover {
     background: #b3aca7;
     color: #eceae7;
     transition: all 0.3s ease-in-out;
+}
+
+.form-container {
+    padding-top: 20px;
+}
+
+#reused_form {
+    position: relative;
+    margin: 50px auto;
+}
+
+input {
+    font-size: 0.90em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 3px #838180;
+    border-bottom: none;
+}
+
+textarea {
+    width: 470px;
+    height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    border: solid 3px #838180;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder,
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #aca49c;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder,
+input:focus:hover::placeholder,
+textarea:focus:hover::placeholder {
+    color: #eceae7;
+}
+
+.form-button {
+    background: transparent;
+    border: solid 3px #838180;
+    padding: 15px 60px;
+    margin: 14px 0 -20px 0;
+}
+
+.form-container h4 {
+    font-size: 1.5em;
+}
+
+#error-message {
+    color: #b18477;
+}
+
+#success-message {
+    color: #4ac272;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 50px;
 }
 
 .arrow {
@@ -558,4 +630,42 @@ footer h3 {
 footer p {
     font-size: 0.9em;
     letter-spacing: 0.3em;
+}
+
+
+/* ------------------------------------------ QUERIES ------------------------------------------ */
+
+@media screen and (max-width: 900px) {
+    .infos h5,
+    typed {
+        font-size: 0.9em;
+    }
+    #langages {
+        margin-left: 1%;
+    }
+    #formation {
+        margin-right: 1%;
+    }
+    .network {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    h1,
+    h2 {
+        font-size: 2em;
+    }
+    #langages {
+        margin-left: 10%;
+        width: 80%;
+    }
+    #formation {
+        margin-right: 10%;
+    }
+    .network {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
 }
