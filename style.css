@@ -267,8 +267,26 @@ header .button:hover a {
     padding-bottom: 15px;
 }
 
+#portefolio h4 {
+    line-height: 1.9em;
+    color: #e9e6e6;
+    font-size: 1.7em;
+}
+
+#portefolio h6 {
+    line-height: 1.9em;
+    color: #ebe2e2;
+    font-size: 2.2em;
+}
+
 .projet {
     display: flex;
+}
+
+#portefolio p {
+    line-height: 1.9em;
+    color: #f8f8f8;
+    font-size: 1.1em;
 }
 
 .projet:nth-child(1) {
