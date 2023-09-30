@@ -20,7 +20,7 @@ var typed = new Typed('.typed', {
 
 var typed2 = new Typed('.typed2', {
     strings: ['Lycéen à Joffre Montpellier', 'Etudiant Epitech Montpellier'],
-    typeSpeed: 35,
+    typeSpeed: 10,
 });
 
 var typed3 = new Typed('.typed3', {
